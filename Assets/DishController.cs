@@ -2,10 +2,8 @@
 using System.Collections.Generic;
 using UnityEngine;
 
-public class POIArbiter : MonoBehaviour {
+public class DishController : MonoBehaviour {
 
-    public POIController[] POIControllers;
-    
 	// Use this for initialization
 	void Start () {
 		
