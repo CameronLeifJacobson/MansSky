@@ -1,12 +1,5 @@
 fileFormatVersion: 2
-<<<<<<< Updated upstream
 guid: 2e0000743ba68e240a8b246f86d45f51
-timeCreated: 1485036883
-=======
-guid: ac71f861547f448808fe1923e98ea4be
-timeCreated: 1485037758
->>>>>>> Stashed changes
-licenseType: Free
 ModelImporter:
   serializedVersion: 19
   fileIDToRecycleName:
@@ -27,6 +20,7 @@ ModelImporter:
     4300000: Dish
     4300002: Pivot
     4300004: Base
+    9500000: //RootNode
   materials:
     importMaterials: 1
     materialName: 0
@@ -51,7 +45,7 @@ ModelImporter:
     isReadable: 1
   meshes:
     lODScreenPercentages: []
-    globalScale: 1
+    globalScale: 0
     meshCompression: 0
     addColliders: 0
     importBlendShapes: 1
@@ -89,7 +83,7 @@ ModelImporter:
     hasExtraRoot: 0
     skeletonHasParents: 1
   lastHumanDescriptionAvatarSource: {instanceID: 0}
-  animationType: 0
+  animationType: 2
   humanoidOversampling: 1
   additionalBone: 0
   userData: 
