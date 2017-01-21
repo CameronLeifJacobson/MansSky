@@ -1,34 +1,15 @@
 fileFormatVersion: 2
-<<<<<<< Updated upstream
-guid: a451efed5fd89d142b168c38715040c5
-timeCreated: 1485036885
-=======
-guid: cdf2fbb40c3074570ad75da97bdf103a
-timeCreated: 1485037759
->>>>>>> Stashed changes
+guid: 8fc8df6b660f943ecb29f4e8713eec00
+timeCreated: 1485037758
 licenseType: Free
 ModelImporter:
   serializedVersion: 19
   fileIDToRecycleName:
-    100000: Base
-    100002: Dish
-    100004: Pivot
-    100006: //RootNode
-    400000: Base
-    400002: Dish
-    400004: Pivot
-    400006: //RootNode
-    2300000: Base
-    2300002: Dish
-    2300004: Pivot
-    3300000: Base
-    3300002: Dish
-    3300004: Pivot
-    4300000: Dish
-    4300002: Pivot
-    4300004: Base
-    7400000: Default Take
-    9500000: //RootNode
+    100000: //RootNode
+    400000: //RootNode
+    2300000: //RootNode
+    3300000: //RootNode
+    4300000: Sky_Map
   materials:
     importMaterials: 1
     materialName: 0
@@ -91,7 +72,7 @@ ModelImporter:
     hasExtraRoot: 0
     skeletonHasParents: 1
   lastHumanDescriptionAvatarSource: {instanceID: 0}
-  animationType: 2
+  animationType: 0
   humanoidOversampling: 1
   additionalBone: 0
   userData: 
