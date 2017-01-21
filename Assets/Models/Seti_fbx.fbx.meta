@@ -1,17 +1,29 @@
 fileFormatVersion: 2
-guid: 8fc8df6b660f943ecb29f4e8713eec00
-timeCreated: 1485037758
+guid: bdcbced360dc74b978c1c834407649e0
+timeCreated: 1485038764
 licenseType: Free
 ModelImporter:
   serializedVersion: 19
   fileIDToRecycleName:
-    100000: //RootNode
-    400000: //RootNode
-    2300000: //RootNode
-    3300000: //RootNode
-    4300000: Sky_Map
+    100000: Base
+    100002: Dish
+    100004: Pivot
+    100006: //RootNode
+    400000: Base
+    400002: Dish
+    400004: Pivot
+    400006: //RootNode
+    2300000: Base
+    2300002: Dish
+    2300004: Pivot
+    3300000: Base
+    3300002: Dish
+    3300004: Pivot
+    4300000: Dish
+    4300002: Pivot
+    4300004: Base
   materials:
-    importMaterials: 0
+    importMaterials: 1
     materialName: 0
     materialSearch: 1
   animations:
