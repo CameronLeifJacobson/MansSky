@@ -11,6 +11,16 @@ public class POIArbiter : MonoBehaviour {
     float timeAccum = 0.0f;
     int POISelectedIndex = 0;
 
+    bool HaveAllPOIsBeenSeen()
+    {
+        foreach (POIController poi in POIControllers)
+        {
+            if (!poi.hasBeenSeen)
+                return false;
+        }
+        return true;
+    }
+
 	// Use this for initialization
 	void Start () {
 		
