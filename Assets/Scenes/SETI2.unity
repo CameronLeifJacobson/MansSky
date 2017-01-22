@@ -1666,7 +1666,7 @@ Prefab:
       objectReference: {fileID: 0}
     - target: {fileID: 4918561162964796, guid: dd1806f1840474a449923e91dfa15408, type: 2}
       propertyPath: m_LocalPosition.y
-      value: 86.6
+      value: 115.1
       objectReference: {fileID: 0}
     - target: {fileID: 4918561162964796, guid: dd1806f1840474a449923e91dfa15408, type: 2}
       propertyPath: m_LocalPosition.z
@@ -1864,7 +1864,7 @@ Prefab:
     - target: {fileID: 224769574984585920, guid: dd1806f1840474a449923e91dfa15408,
         type: 2}
       propertyPath: m_AnchoredPosition.y
-      value: -109
+      value: -97
       objectReference: {fileID: 0}
     - target: {fileID: 224298530465809564, guid: dd1806f1840474a449923e91dfa15408,
         type: 2}
@@ -1936,6 +1936,11 @@ Prefab:
       propertyPath: clips.Array.data[5]
       value: 
       objectReference: {fileID: 7400000, guid: 2e913bcf188e3f943a3a7f0507ad5ff8, type: 2}
+    - target: {fileID: 224993504554568508, guid: dd1806f1840474a449923e91dfa15408,
+        type: 2}
+      propertyPath: m_AnchoredPosition.y
+      value: -12.7
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: dd1806f1840474a449923e91dfa15408, type: 2}
   m_IsPrefabParent: 0
