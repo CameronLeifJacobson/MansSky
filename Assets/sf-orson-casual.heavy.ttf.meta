@@ -1,0 +1,21 @@
+fileFormatVersion: 2
+guid: 39a10e780c5183042b337a2c5a79e356
+timeCreated: 1485067841
+licenseType: Free
+TrueTypeFontImporter:
+  serializedVersion: 4
+  fontSize: 16
+  forceTextureCase: -2
+  characterSpacing: 0
+  characterPadding: 1
+  includeFontData: 1
+  fontName: SF Orson Casual Heavy
+  fontNames:
+  - SF Orson Casual Heavy
+  fallbackFontReferences: []
+  customCharacters: 
+  fontRenderingMode: 0
+  ascentCalculationMode: 1
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 

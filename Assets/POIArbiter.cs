@@ -6,6 +6,7 @@ public class POIArbiter : MonoBehaviour {
 
     public POIController[] POIControllers;
     public DishController[] DishControllers;
+    public Camera playerCamera;
 
     float timeAccum = 0.0f;
     int POISelectedIndex = 0;
@@ -22,15 +23,38 @@ public class POIArbiter : MonoBehaviour {
 
         if (timeAccum >= 2.0f)
         {
-            
             timeAccum -= 5.0f;
-            foreach(DishController dish in DishControllers)
+
+            POIController newlyActivatedPOI = POIControllers[POISelectedIndex];
+
+            foreach (DishController dish in DishControllers)
             {
-                Debug.Log("Switching Focus");
-                dish.SetNewFocus(POIControllers[POISelectedIndex].transform.position);
+                //Debug.Log("Switching Focus");
+                dish.SetNewFocus(newlyActivatedPOI.GetComponent<SphereCollider>().transform.position + newlyActivatedPOI.GetComponent<SphereCollider>().transform.right * newlyActivatedPOI.GetComponent<SphereCollider>().center.x);
             }
+
+            newlyActivatedPOI.BeginPulsing();
 
             POISelectedIndex = (POISelectedIndex + 1) % POIControllers.Length;
         }
-	}
+
+        Vector3 start = playerCamera.transform.position;
+        Vector3 end = playerCamera.transform.position + 10000.0f * playerCamera.transform.forward;
+
+        Physics.Raycast(start, end, Mathf.Infinity, Physics.DefaultRaycastLayers, QueryTriggerInteraction.Collide);
+        Debug.DrawLine(start, end, Color.blue, 4);
+        RaycastHit hit;
+
+        if (Physics.Raycast(playerCamera.transform.position, playerCamera.transform.forward, out hit, 10000.0f))
+        {
+            
+            POIController hitPOIController = hit.collider.GetComponentInParent<POIController>();
+
+            if (hitPOIController)
+            {
+                //print("Found an object - distance: " + hit.distance);
+                hitPOIController.UserRaycastHit(Time.deltaTime);
+            }
+        }
+    }
 }

@@ -65,13 +65,6 @@ public class DishController : MonoBehaviour {
 
         whichLerp = 0;
         startAngle = lastYaw;
-        Debug.Log("Starting Angle: " + startAngle);
-        Debug.Log("1.0f, 0.0f: " + VectorToYaw(new Vector3(0.0f, 0.0f, 1.0f)));
-        Debug.Log("0.707f, 0.707f: " + VectorToYaw(new Vector3(0.707f, 0.0f, 0.707f)));
-        Debug.Log("0.0f, 1.0f: " + VectorToYaw(new Vector3(1.0f, 0.0f, 0.0f)));
-        Debug.Log("-0.707f, 0.707f: " + VectorToYaw(new Vector3(-0.707f, 0.0f, -0.707f)));
-        Debug.Log("-1.0f, 0.0f: " + VectorToYaw(new Vector3(-1.0f, 0.0f, -1.0f)));
-        Debug.Log("-0.707f, -0.707f: " + VectorToYaw(new Vector3(-0.707f, 0.0f, -0.707f)));
 
         Vector3 yawDifference = differenceVector;
         yawDifference.y = 0;
