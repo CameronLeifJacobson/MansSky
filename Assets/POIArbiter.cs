@@ -21,9 +21,9 @@ public class POIArbiter : MonoBehaviour {
         // Every five seconds, change which POI to focus on
         timeAccum += Time.deltaTime;
 
-        if (timeAccum >= 2.0f)
+        if (timeAccum >= 5.0f)
         {
-            timeAccum -= 5.0f;
+            timeAccum -= 10.0f;
 
             POIController newlyActivatedPOI = POIControllers[POISelectedIndex];
 
