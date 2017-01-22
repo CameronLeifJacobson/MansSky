@@ -7,6 +7,7 @@ public class POIArbiter : MonoBehaviour {
     public POIController[] POIControllers;
     public DishController[] DishControllers;
     public Camera playerCamera;
+    public GameObject sky;
 
     float timeAccum = 0.0f;
     int POISelectedIndex = 0;
